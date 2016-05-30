@@ -7,7 +7,7 @@
 # To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
 #
 Pod::Spec.new do |s|
-  s.name             = 'libWebRTC'
+  s.name             = 'WebRTC'
   s.version          = '1.0.4'
   s.summary          = 'webrtc lib'
 
@@ -48,7 +48,7 @@ webrtc(google opensource) is p2p video chat framework
   s.public_header_files = 'Pod/Headers/*.h',
   s.library = 'icucore','c++','stdc++.6','sqlite3'
   s.frameworks = 'UIKit','Security','CFNetwork','GLKit','AudioToolbox','AVFoundation','CoreAudio','CoreMedia','CoreVideo','CoreGraphics','OpenGLES','QuartzCore'
-  s.module_name = 'libWebRTC'
+  s.module_name = 'WebRTC'
 
   s.requires_arc     = true
 end
