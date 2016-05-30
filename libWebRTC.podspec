@@ -29,7 +29,7 @@ webrtc(google opensource) is p2p video chat framework
   s.platform     = :ios, "8.0"
 
   s.xcconfig = { 
-    'FRAMEWORK_SEARCH_PATHS' => '"${PODS_ROOT}"', 
+    'FRAMEWORK_SEARCH_PATHS' => '"${PODS_ROOT}/**"', 
     'GCC_PREPROCESSOR_DEFINITIONS' => "WEBRTC_POSIX LOGGING=1 FEATURE_ENABLE_SSL SYSTEM_NATIVELY_SIGNALS_MEMORY_PRESSURE IOS WEBRTC_IOS CARBON_DEPRECATED=YES USE_OPENSSL=1 NDEBUG NVALGRIND" 
   }
   s.source_files = [
@@ -45,6 +45,7 @@ webrtc(google opensource) is p2p video chat framework
     "Pod/webrtc/system_wrappers/include/*.h",
     ]
   s.vendored_libraries = "Pod/lib/*.a"
+  s.public_header_files = 'Pod/Headers/*.h',
   s.library = 'icucore','c++','stdc++.6','sqlite3'
   s.frameworks = 'UIKit','Security','CFNetwork','GLKit','AudioToolbox','AVFoundation','CoreAudio','CoreMedia','CoreVideo','CoreGraphics','OpenGLES','QuartzCore'
   s.module_name = 'libWebRTC'
