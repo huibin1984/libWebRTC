@@ -10,6 +10,7 @@
 
 #import <WebRTC/RTCMacros.h>
 #import <WebRTC/RTCVideoSource.h>
+#include <WebRTC/avfoundationvideocapturer.h>
 
 @class AVCaptureSession;
 @class RTCMediaConstraints;
@@ -38,6 +39,8 @@ RTC_EXPORT
 /** Returns the active capture session. */
 @property(nonatomic, readonly) AVCaptureSession *captureSession;
 
+@property(nonatomic, readonly) webrtc::AVFoundationVideoCapturer *capturer;
+@property (nonatomic, readonly) HBCapturePipeline *capturePipeline;
 @end
 
 NS_ASSUME_NONNULL_END

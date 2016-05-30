@@ -7,7 +7,7 @@
 #
 Pod::Spec.new do |s|
   s.name             = 'libWebRTC'
-  s.version          = '1.0.2'
+  s.version          = '1.0.3'
   s.summary          = 'static library of webrtc.'
 
 # This description is used to generate tags and improve search results.
@@ -20,10 +20,10 @@ Pod::Spec.new do |s|
 webrtc(google opensource) is p2p video chat framework
                        DESC
 
-  s.homepage         = 'https://github.com/animeng/libWebRTC'
+  s.homepage         = 'https://github.com/huibin1984/libWebRTC'
   s.license          = 'MIT'
   s.author           = { 'wang animeng' => 'animeng68@gmail.com' }
-  s.source           = { :git => 'https://github.com/animeng/libWebRTC.git' }
+  s.source           = { :git => 'https://github.com/huibin1984/libWebRTC.git' }
   s.social_media_url = 'http://weibo.com/mengtnt'
   s.platform     = :ios, "8.0"
 
