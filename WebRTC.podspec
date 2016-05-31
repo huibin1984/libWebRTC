@@ -28,7 +28,7 @@ webrtc(google opensource) is p2p video chat framework
   s.social_media_url = 'http://weibo.com/huibin1984'
   s.platform     = :ios, "8.0"
 
-  s.pod_target_xcconfig = { 
+  s.xcconfig = { 
     'HEADER_SEARCH_PATHS' => '"${PODS_ROOT}/Pod/**"', 
     'GCC_PREPROCESSOR_DEFINITIONS' => "WEBRTC_POSIX LOGGING=1 FEATURE_ENABLE_SSL SYSTEM_NATIVELY_SIGNALS_MEMORY_PRESSURE IOS WEBRTC_IOS CARBON_DEPRECATED=YES USE_OPENSSL=1 NDEBUG NVALGRIND",
     'OTHER_LDFLAGS' => '-ObjC'
